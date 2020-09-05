@@ -1,0 +1,216 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 11vh;
+  padding-bottom: 2rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.checkoutForm {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formGroup {
+  margin: 0.5rem 1rem;
+}
+
+.myInputRed {
+  border: none;
+  background-color: rgb(255, 243, 209);
+  outline: none;
+  border-bottom: 1px solid red;
+  border-radius: 0;
+}
+
+.myInputGreen {
+  border: none;
+  background-color: rgb(255, 243, 209);
+  outline: none;
+  border-bottom: 1px solid green;
+  border-radius: 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clearfix {
+  clear: both;
+  margin: 0;
+}
+
+.myButton {
+  outline: none;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  margin: 0rem 1rem;
+  background-color: #dda741;
+  transition: all 0.3s ease;
+}
+
+.myButton:hover {
+  cursor: pointer;
+  background-color: #ce8c12;
+}
+
+.steps {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom-style: solid;
+  border-width: 0.3rem;
+  border-color: #ce8c12;
+}
+
+.steps div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkIcon {
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: 0.3rem;
+}
+
+.thisStep {
+  color: #ce8c12;
+}
+
+.deliveryStep {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.deliveryOption {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: rgb(255, 243, 209);
+  outline: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding: 0.5rem 0;
+}
+
+.deliveryOption label {
+  padding-left: 1rem;
+}
+
+.deliveryCheckbox {
+  width: 1rem;
+  margin: 0 2rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.yourOrderTitle {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-style: solid;
+  border-width: 0.3rem;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+}
+
+.userDetailSummary {
+  margin-top: 1rem;
+  float: left;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.cartSummaryDetails {
+  float: right;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.userDetailSummary tbody tr:nth-child(odd),
+.cartSummaryDetails tbody tr:nth-child(odd) {
+  background: #e6d8b1;
+}
+
+.userDetailSummary tbody tr:hover,
+.cartSummaryDetails tbody tr:hover {
+  background: #e0cc94;
+}
+
+.userDetailSummary td,
+.userDetailSummary th {
+  padding: 0.35rem 0.5rem;
+}
+
+.cartSummaryDetails td,
+.cartSummaryDetails th {
+  height: 1.3rem;
+  padding: 0.15rem 0.15rem 0.15rem 0.5rem;
+}
+
+.cartSummaryDetails tfoot {
+  background-color: #dda741;
+
+  font-weight: 600;
+}
+.cartSummaryDetails tfoot td {
+  padding: 0.3rem 0.5rem;
+}
+
+.deliveryDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.deliveryDetails div {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6d8b1;
+  padding-left: 1rem;
+  /* padding: 0.5rem 1rem; */
+}
+
+.deliveryDetailsTitle {
+  margin: 0.5rem 0;
+  text-decoration: underline;
+}
+
+.deliveryPrice {
+  background-color: #dda741;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.orderTotal {
+  font-weight: 600;
+  background-color: #ce8c12;
+  padding: 0.5rem 3rem;
+}
+
+.deliveryError {
+  margin: 0.5rem 1rem;
+  color: red;
+  border-bottom: 1px solid red;
+}
+.userdetailsError {
+  color: red;
+}

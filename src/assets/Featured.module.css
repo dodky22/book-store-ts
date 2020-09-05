@@ -1,0 +1,141 @@
+.container {
+  width: 80%;
+  /* max-height: 10vh; */
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.title {
+  background-color: #000;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+  padding: 0.5rem;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom-style: solid;
+  border-width: 0.5rem;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  padding: 1rem;
+  height: 100%;
+}
+
+.featuredFlex {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2rem 0 4rem 0;
+  overflow-y: hidden;
+  justify-content: space-evenly;
+  /* height: 100%; */
+}
+
+.link {
+  background-color: #d6ad60;
+  width: 10%;
+  display: inline-block;
+  margin: 0.5rem auto 1rem auto;
+  padding: 0.7rem 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.link:hover {
+  background-color: #d39522;
+  color: #fff;
+  transition: 0.5s;
+}
+
+@media (max-width: 1290px) {
+  .featuredFlex {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 1135px) {
+  .featuredFlex {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .featuredFlex {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .featuredFlex {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .featuredFlex {
+    padding-left: 13rem;
+    padding-right: 14rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .featuredFlex {
+    padding-left: 15rem;
+    padding-right: 16rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .featuredFlex {
+    padding-left: 18rem;
+    padding-right: 19rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .link {
+    width: 20%;
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .featuredFlex {
+    padding-left: 20rem;
+    padding-right: 21rem;
+  }
+}
+@media (max-width: 375px) {
+  .featuredFlex {
+    padding-left: 22rem;
+    padding-right: 23rem;
+  }
+}
+@media (max-width: 280px) {
+  .link {
+    width: 30%;
+  }
+}

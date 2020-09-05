@@ -1,0 +1,199 @@
+.container {
+  width: 80%;
+  padding-top: 10vh;
+  margin: 2rem auto 0 auto;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.singleImage {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(124, 58, 58, 0.45);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.imgPrice:hover {
+  transform: scale(1.1);
+}
+
+.imgPrice {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  background-color: #d6ad60;
+  color: white;
+  border-top-left-radius: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.title {
+  width: 97%;
+  padding: 0.5rem;
+  margin-bottom: 0;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 0.3rem;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* width: 100%; */
+}
+
+.table {
+  margin-top: 0;
+  /* padding: 0.5rem; */
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  margin-bottom: 4rem;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-child(odd) {
+  background: #e6d8b1;
+}
+.table tbody tr:hover {
+  background: #e0cc94;
+}
+
+.table th {
+  height: 2.5rem;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  width: 15rem;
+  padding: 0 1rem;
+}
+
+.cartBtn {
+  color: white;
+  padding: 0.7rem;
+  /* font-size: 1.5rem; */
+  border: none;
+  outline: none;
+  background-color: #d6ad60;
+  border-radius: 0.3rem;
+  /* font-size: 1.15rem; */
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.cartBtn .icon {
+  margin-left: 0.5rem;
+  position: relative;
+  top: 0.1rem;
+  pointer-events: none;
+}
+.cartBtn:hover {
+  cursor: pointer;
+  background-color: #ce8c12;
+  transform: scale(1.05);
+}
+
+.info {
+  margin: 2rem 0;
+  border-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.info p {
+  padding: 1rem 1rem;
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.05rem;
+  background: #fff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.info h3 {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.7rem;
+  margin-bottom: 0;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 0.3rem;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+}
+
+.otherInfo {
+  margin: 2rem 0 0 0;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.otherInfo table {
+  margin-bottom: 0;
+}
+
+.otherInfo h3 {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.7rem;
+  margin-bottom: 0;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  color: white;
+  border-bottom-style: solid;
+  border-width: 0.3rem;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+}
+
+.otherInfo table {
+  width: 100%;
+}
+
+/* @media (min-height: 2000px) {
+  .singleImage {
+    width: 20rem;
+    height: 30rem;
+  }
+} */
