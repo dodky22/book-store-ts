@@ -14,10 +14,8 @@ interface Props {
 
 const Book = ({ bookDetails }: Props) => {
   const { image, price, name, slug } = bookDetails;
-  // console.log(name, image, slug, price);
   const context = useContext(BookContext);
   const { addCart } = context;
-  // console.log(bookDetails);
 
   const truncate = (str: string, n: number) => {
     return str.length > n ? str.substr(0, n - 1) + "..." : str;
@@ -27,7 +25,7 @@ const Book = ({ bookDetails }: Props) => {
     <div className={styles.book}>
       <img src={image} alt="Not found" />
       <h5>{name !== undefined ? truncate(name, 35) : ""}</h5>
-      <Link to={`/store/${slug}`} className={styles.info}>
+      <Link to={`/book-store-ts/store/${slug}`} className={styles.info}>
         Info
       </Link>
       <span className={styles.price}>{price} € </span>

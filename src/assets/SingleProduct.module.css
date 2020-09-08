@@ -1,7 +1,7 @@
 .container {
   width: 80%;
   padding-top: 10vh;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto 0 auto;
   background-color: #fff;
   padding-bottom: 2rem;
   padding-right: 2rem;
@@ -19,7 +19,10 @@
 }
 
 .imgPrice:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.imgPrice:hover .price {
+  background-color: #ce8c12;
 }
 
 .imgPrice {
@@ -37,6 +40,7 @@
   border-top-left-radius: 0.7rem;
   font-size: 1.5rem;
   font-weight: 500;
+  transition: all 0.5s ease;
 }
 
 .title {
@@ -64,12 +68,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  /* width: 100%; */
 }
 
 .table {
   margin-top: 0;
-  /* padding: 0.5rem; */
   width: 100%;
   background-color: #fff;
   border-bottom-left-radius: 1rem;
@@ -100,13 +102,11 @@
 
 .cartBtn {
   color: white;
-  padding: 0.7rem;
-  /* font-size: 1.5rem; */
+  padding: 0.7rem 1.5rem 0.7rem 3rem;
   border: none;
   outline: none;
   background-color: #d6ad60;
   border-radius: 0.3rem;
-  /* font-size: 1.15rem; */
   transition: all 0.3s ease;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
@@ -114,7 +114,7 @@
 }
 
 .cartBtn .icon {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   position: relative;
   top: 0.1rem;
   pointer-events: none;
@@ -191,9 +191,68 @@
   width: 100%;
 }
 
-/* @media (min-height: 2000px) {
-  .singleImage {
-    width: 20rem;
-    height: 30rem;
+@media (max-width: 1150px) {
+  .title {
+    width: 87%;
   }
-} */
+  .table {
+    width: 90%;
+  }
+  .flexCol {
+    margin-left: 5rem;
+  }
+  .singleImage {
+    width: 15rem;
+    height: 25rem;
+  }
+}
+@media (max-width: 930px) {
+  .title {
+    width: 86%;
+  }
+}
+
+@media (max-width: 800px) {
+  .flexRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    width: 97%;
+  }
+  .table {
+    width: 100%;
+  }
+  .flexCol {
+    margin-left: 0;
+    align-items: unset;
+  }
+  .table {
+    margin-bottom: 1rem;
+  }
+  .price {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  .otherInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    width: 96%;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    width: 94%;
+  }
+}

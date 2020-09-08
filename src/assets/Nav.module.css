@@ -1,48 +1,53 @@
 .navigation {
   background-color: #000;
-  height: 9vh;
   font-size: 1.15rem;
   font-weight: 600;
   position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 1;
   border-bottom-style: solid;
   border-width: 0.5rem;
   border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 }
+
 .container {
-  height: 10vh;
-  width: 80%;
+  padding: 1rem 0;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 80%;
 }
 
-.rightLinks {
+.normalNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 4vh;
 }
 
-.leftLinks {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.showLinks {
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.showLinks li {
+  padding-bottom: 0.5rem;
+}
+
+.hideLinks {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+}
+
+.pill {
+  background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+  padding: 0.4rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 0.5rem;
   color: white;
-}
-
-.navigation a {
-  margin-right: 1rem;
-  padding-bottom: 0.2rem;
-  text-decoration: none;
-  color: rgb(199, 199, 199);
-}
-
-.navigation a:hover {
-  color: #fff;
 }
 
 .navigation a.active {
@@ -52,17 +57,37 @@
   border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 }
 
-.pill {
-  background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
-  padding: 0.4rem;
-  border-radius: 1rem;
-  position: relative;
-  bottom: 0.5rem;
+.rightLinks a {
+  margin-right: 0.7rem;
+}
+
+.leftLinks a {
+  margin-right: 0.7rem;
+}
+
+.burgerCart {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.showBurger {
+  display: none;
+}
+
+.burgerButton {
+  background-color: #000;
+  outline: none;
+  border: none;
+  color: white;
 }
 
 @media (max-width: 590px) {
-  .navigation {
-    position: absolute;
-    /* width: 80%; */
+  .showBurger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .normalNav {
+    display: none;
   }
 }

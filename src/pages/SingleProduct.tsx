@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { useLocation } from "react-router-dom";
 
 import styles from "../assets/SingleProduct.module.css";
 
@@ -18,15 +17,8 @@ interface Props {
 const SingleProduct = (props: Props) => {
   const context = useContext(BookContext);
   const { loading, getBook, addCart } = context;
-  //CO SU VLASTNE TIETO PROPS NACO SA POUZIVAJU TIE OSTATNE
   let slug = props.match.params.slug;
   const book = getBook(slug);
-
-  const { pathname } = useLocation();
-
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
 
   if (loading) {
     return <Loading />;
@@ -35,7 +27,7 @@ const SingleProduct = (props: Props) => {
       <div>
         <div>
           <h3>Sorry, we couldn`t find this book</h3>
-          <Link to="/store">Back to store</Link>
+          <Link to="/book-store-ts/store">Back to store</Link>
         </div>
       </div>
     );
@@ -55,7 +47,8 @@ const SingleProduct = (props: Props) => {
       size,
       weight,
     } = book;
-    // console.log(genre);
+
+    // console.log(book);
 
     return (
       <>
@@ -94,7 +87,6 @@ const SingleProduct = (props: Props) => {
 
               <button
                 className={styles.cartBtn}
-                // value={book.isbn}
                 onClick={() => {
                   addCart(book);
                 }}
@@ -133,7 +125,7 @@ const SingleProduct = (props: Props) => {
             </table>
           </div>
         </div>
-        <SameGenreBooks genreMain={genre}></SameGenreBooks>
+        <SameGenreBooks thisGenre={genre} thisBook={book}></SameGenreBooks>
         <Featured></Featured>
       </>
     );

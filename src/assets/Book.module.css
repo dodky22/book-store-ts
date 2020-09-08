@@ -69,6 +69,7 @@
   background-color: #d19a33;
   transform: scaleY(1.3);
   transition: 0.5s ease-in-out;
+  color: white;
 }
 
 .cart {

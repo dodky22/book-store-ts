@@ -15,7 +15,7 @@ const Store = (props: Props) => {
     <>
       <Hero>
         <Banner title="Store">
-          <Link className={styles.link} to="/">
+          <Link className={styles.link} to="/book-store-ts">
             Home
           </Link>
         </Banner>

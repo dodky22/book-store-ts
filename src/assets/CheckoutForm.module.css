@@ -1,8 +1,8 @@
 .container {
   width: 80%;
   margin: 0 auto;
-  margin-top: 11vh;
-  padding-bottom: 2rem;
+  margin-top: 8vh;
+  padding-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -186,7 +186,6 @@ input[type="number"] {
   align-items: center;
   background-color: #e6d8b1;
   padding-left: 1rem;
-  /* padding: 0.5rem 1rem; */
 }
 
 .deliveryDetailsTitle {
@@ -213,4 +212,108 @@ input[type="number"] {
 }
 .userdetailsError {
   color: red;
+}
+.detailsTitle {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .userDetailSummary {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+  }
+  .cartSummaryDetails {
+    float: none;
+    width: 100%;
+  }
+  .yourOrderTitle {
+    margin-bottom: 0;
+  }
+  .detailsTitle {
+    display: block;
+    text-decoration: underline;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 910px) {
+  .checkoutForm {
+    display: block;
+    padding-right: 2rem;
+  }
+  .myInputGreen,
+  .myInputRed {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cartSummaryIsbn {
+    display: none;
+  }
+}
+
+@media (max-width: 710px) {
+  .cartSummaryAuthor {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .deliveryDetails {
+    flex-direction: column;
+  }
+  .deliveryDetails div {
+    width: 96%;
+  }
+  .orderTotal {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  .steps {
+    padding: 0.5rem 0;
+  }
+  .container {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .checkIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .checkSpan {
+    font-size: 0.8rem;
+  }
+
+  .cartSummaryGenre {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .cartSummaryName {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .yourOrderTitle {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .myButton {
+    padding: 0.5rem;
+  }
+  .deliveryDetails div {
+    font-size: 0.9rem;
+    width: 93%;
+  }
+  .cartSummaryDetails {
+    font-size: 0.9rem;
+  }
+  .userDetailSummary {
+    font-size: 0.9rem;
+  }
 }

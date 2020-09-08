@@ -99,10 +99,10 @@ const FormSummaryDetails = ({
               style={{ width: "2rem", height: "3rem" }}
             />
           </td>
-          <td>{name}</td>
-          <td>{genre}</td>
-          <td>{isbn}</td>
-          <td>{author}</td>
+          <td className={styles.cartSummaryName}>{name}</td>
+          <td className={styles.cartSummaryGenre}>{genre}</td>
+          <td className={styles.cartSummaryIsbn}>{isbn}</td>
+          <td className={styles.cartSummaryAuthor}>{author}</td>
           <td>{item.quantity}</td>
           <td>{price} €</td>
         </tr>
@@ -114,34 +114,24 @@ const FormSummaryDetails = ({
     return null;
   }
   return (
-    <div style={{ width: "100%", padding: "0 1rem 1rem 1rem" }}>
+    <div style={{ width: "100%", padding: "0 1rem 0.5rem 1rem" }}>
       <h3 className={styles.yourOrderTitle}>Your order</h3>
+      <h4 className={styles.detailsTitle}>Your details</h4>
       {userDetailSummary}
-
+      <h4 className={styles.detailsTitle}>Cart details</h4>
       <table className={styles.cartSummaryDetails}>
         <thead>
           <tr>
             <th>Item:</th>
-            <th>Name:</th>
-            <th>Genre:</th>
-            <th>ISBN</th>
-            <th>Author</th>
+            <th className={styles.cartSummaryName}>Name:</th>
+            <th className={styles.cartSummaryGenre}>Genre:</th>
+            <th className={styles.cartSummaryIsbn}>ISBN</th>
+            <th className={styles.cartSummaryAuthor}>Author</th>
             <th>Quantity</th>
             <th>Price</th>
           </tr>
         </thead>
         <tbody>{cartSummary}</tbody>
-        <tfoot>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Cart total: </td>
-            <td> {sum} €</td>
-          </tr>
-        </tfoot>
       </table>
       <p className={styles.clearfix}></p>
       <h4 className={styles.deliveryDetailsTitle}>Delivery details</h4>

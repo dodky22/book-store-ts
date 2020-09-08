@@ -25,7 +25,7 @@ const Featured = (props: Props) => {
         <div className={styles.featured}>
           <div className={styles.featuredFlex}>{books}</div>
         </div>
-        <Link className={styles.link} to="/store">
+        <Link className={styles.link} to="/book-store-ts/store">
           Store
         </Link>
       </div>

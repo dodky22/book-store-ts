@@ -29,7 +29,7 @@ const Cart = (props: Props) => {
           <h3>Cart</h3>
           <div className={styles.alert}>
             <h3>No items in cart</h3>
-            <Link to="/store" className={styles.link}>
+            <Link to="/book-store-ts/store" className={styles.link}>
               Back to store
             </Link>
           </div>

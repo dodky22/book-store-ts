@@ -28,25 +28,35 @@ const Footer = (props: Props) => {
           </div>
           <div>
             <h3>Navigation</h3>
-            <Link to="/">
+            <Link to="/book-store-ts">
               <span role="img" aria-label="book emoji">
                 {" "}
                 📖
               </span>{" "}
               Home
             </Link>
-            <Link to="/store">Store</Link>
-            <Link to="/cart">Cart</Link>
+            <Link to="/book-store-ts/store">Store</Link>
+            <Link to="/book-store-ts/cart">Cart</Link>
           </div>
         </div>
         <div className={styles.rightFooter}>
           <h3>Socials</h3>
-          <Link to="www.facebook.com">
+          <a
+            target="_blank"
+            onClick={() => {
+              window.open("https://www.facebook.com");
+            }}
+          >
             <FaFacebook className={styles.footerIcon} />
-          </Link>
-          <Link to="www.instagram.com">
+          </a>
+          <a
+            target="_blank"
+            onClick={() => {
+              window.open("https://www.instagram.com");
+            }}
+          >
             <FaInstagram className={styles.footerIcon} />
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

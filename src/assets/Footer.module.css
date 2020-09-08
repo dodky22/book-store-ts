@@ -42,6 +42,7 @@
 
 .rightFooter .footerIcon:hover {
   cursor: pointer;
+  color: white;
   background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
 }
 

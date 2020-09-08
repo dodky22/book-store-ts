@@ -110,7 +110,7 @@ const CheckoutForm = ({ sum }: Props) => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    history.push("/");
+    history.push("/book-store-ts/cart/success");
     removeItemsFromCart();
     console.log(JSON.stringify(values));
   };

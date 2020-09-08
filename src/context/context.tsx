@@ -23,7 +23,7 @@ interface BookContextInterface {
   isbn: string;
   quantity: number;
 }
-//TU BUD NECHAM TO ANY ALEBO VYPLNIM DEFAULT HODNOTY Z TOHO INTERFACU
+//either leave any or fill default values from interface
 const BookContext = createContext<BookContextInterface | any>({});
 
 interface Props {
@@ -49,8 +49,6 @@ const BookProvider = ({ children }: Props) => {
   const [language, setLanguage] = useState<string>("All");
   const [pages, setPages] = useState<number>(0);
   const [isbn, setIsbn] = useState<string>("");
-
-  // let [quantity, setquantity] = useState(1);
 
   const getData = async () => {
     try {
@@ -95,7 +93,6 @@ const BookProvider = ({ children }: Props) => {
       setPages(maxPages);
       setMaxPages(maxPages);
       setMinPages(minPages);
-      // getCartItems();
     } catch (error) {
       console.log(error);
     }
