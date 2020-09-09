@@ -28,7 +28,13 @@ const BurgerNav = (props: Props) => {
         </button>
         <ul className={burger ? styles.showLinks : styles.hideLinks}>
           <li>
-            <NavLink to="/book-store-ts">📖 Home</NavLink>
+            <NavLink to="/book-store-ts">
+              {" "}
+              <span role="img" aria-label="book emoji">
+                📖
+              </span>
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink to="/book-store-ts/store">Store</NavLink>

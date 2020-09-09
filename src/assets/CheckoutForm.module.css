@@ -1,14 +1,14 @@
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 8vh;
+  margin-top: 5vh;
   padding-bottom: 1rem;
+  /* margin-bottom: 5vh; */
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   border-radius: 1rem;
   background-color: #fff;
-  overflow: auto;
 }
 
 .checkoutForm {
@@ -52,7 +52,7 @@
   padding: 0.7rem;
   border-radius: 0.7rem;
   margin: 0rem 1rem;
-  background-color: #dda741;
+  background-color: #f5a716;
   transition: all 0.3s ease;
 }
 
@@ -61,13 +61,15 @@
   background-color: #ce8c12;
 }
 
+.myButton:disabled {
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
 .steps {
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
-  border-bottom-style: solid;
-  border-width: 0.3rem;
-  border-color: #ce8c12;
 }
 
 .steps div {
@@ -83,7 +85,7 @@
 }
 
 .thisStep {
-  color: #ce8c12;
+  color: #f5a716;
 }
 
 .deliveryStep {
@@ -111,6 +113,38 @@
   margin: 0 2rem;
 }
 
+.closeBtn {
+  width: 100%;
+  background-color: #f5a716;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+  background-color: #ce8c12;
+  transform: scaleY(1.2);
+}
+
+input[type="checkbox"] {
+  border: 1px solid #000;
+  content: "\00a0";
+  display: inline-block;
+  font: sans-serif;
+  height: 16px;
+  margin: 0 0.5rem 0 1.5rem;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -124,9 +158,9 @@ input[type="number"] {
 }
 .yourOrderTitle {
   color: white;
+  margin: 0;
   padding: 0.5rem 1rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+
   border-bottom-style: solid;
   border-width: 0.3rem;
   border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
@@ -143,16 +177,17 @@ input[type="number"] {
   float: right;
   text-align: left;
   border-collapse: collapse;
+  width: 70%;
 }
 
 .userDetailSummary tbody tr:nth-child(odd),
 .cartSummaryDetails tbody tr:nth-child(odd) {
-  background: #e6d8b1;
+  background: #f0c880;
 }
 
 .userDetailSummary tbody tr:hover,
 .cartSummaryDetails tbody tr:hover {
-  background: #e0cc94;
+  background: #f0c98085;
 }
 
 .userDetailSummary td,
@@ -166,25 +201,17 @@ input[type="number"] {
   padding: 0.15rem 0.15rem 0.15rem 0.5rem;
 }
 
-.cartSummaryDetails tfoot {
-  background-color: #dda741;
-
-  font-weight: 600;
-}
-.cartSummaryDetails tfoot td {
-  padding: 0.3rem 0.5rem;
-}
-
 .deliveryDetails {
   display: flex;
   justify-content: space-between;
 }
 .deliveryDetails div {
   width: 30%;
+  height: 2.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e6d8b1;
+  background-color: #f0c880;
   padding-left: 1rem;
 }
 
@@ -194,15 +221,24 @@ input[type="number"] {
 }
 
 .deliveryPrice {
-  background-color: #dda741;
+  background-color: #f5a716;
   padding: 0.5rem 1rem;
+
   font-weight: 600;
 }
 
 .orderTotal {
+  font-size: 1.2rem;
   font-weight: 600;
-  background-color: #ce8c12;
+  background-color: #000;
+  color: white;
   padding: 0.5rem 3rem;
+  border-style: solid;
+  border-right-style: none;
+  border-width: 0.25rem;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .deliveryError {
@@ -215,6 +251,14 @@ input[type="number"] {
 }
 .detailsTitle {
   display: none;
+}
+
+.summaryContent {
+  padding: 0 1rem;
+}
+
+.deliveryContent {
+  padding: 0 0 1rem 1rem;
 }
 
 @media (max-width: 1400px) {
@@ -240,7 +284,7 @@ input[type="number"] {
 @media (max-width: 910px) {
   .checkoutForm {
     display: block;
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
   }
   .myInputGreen,
   .myInputRed {
@@ -267,9 +311,13 @@ input[type="number"] {
   .deliveryDetails div {
     width: 96%;
   }
+  .deliveryContent {
+    padding: 0 1rem 1rem 1rem;
+  }
   .orderTotal {
     margin-top: 0.5rem;
     text-align: center;
+    border-right-style: solid;
   }
   .steps {
     padding: 0.5rem 0;

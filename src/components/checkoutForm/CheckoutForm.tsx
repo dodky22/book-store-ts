@@ -26,9 +26,10 @@ import CheckoutFormButtons from "./CheckoutFormButtons";
 
 interface Props {
   sum: number;
+  handle: () => void;
 }
 
-const CheckoutForm = ({ sum }: Props) => {
+const CheckoutForm = ({ sum, handle }: Props) => {
   const context = useContext(BookContext);
   const { removeItemsFromCart } = context;
 
@@ -117,7 +118,7 @@ const CheckoutForm = ({ sum }: Props) => {
 
   return (
     <div className={styles.container}>
-      <StepsHeader currentStep={currentStep}></StepsHeader>
+      <StepsHeader currentStep={currentStep} handleShow={handle}></StepsHeader>
 
       <form onSubmit={handleSubmit}>
         <div className={styles.checkoutForm}>

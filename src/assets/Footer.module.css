@@ -16,7 +16,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .leftFooter {
@@ -57,7 +56,7 @@ a {
 }
 
 a:hover {
-  color: #d6ad60;
+  color: #f5a716;
 }
 
 @media (max-width: 610px) {
@@ -82,8 +81,6 @@ a:hover {
   .container {
     display: block;
   }
-}
-@media (max-width: 350px) {
   .leftFooter {
     display: block;
     text-align: center;

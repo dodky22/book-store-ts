@@ -35,7 +35,7 @@
   right: 0;
   bottom: 0;
   padding: 1.5rem;
-  background-color: #d6ad60;
+  background-color: #f5a716;
   color: white;
   border-top-left-radius: 0.7rem;
   font-size: 1.5rem;
@@ -83,10 +83,10 @@
   border-collapse: collapse;
 }
 .table tbody tr:nth-child(odd) {
-  background: #e6d8b1;
+  background: #f0c880;
 }
 .table tbody tr:hover {
-  background: #e0cc94;
+  background: #f0c98085;
 }
 
 .table th {
@@ -105,7 +105,7 @@
   padding: 0.7rem 1.5rem 0.7rem 3rem;
   border: none;
   outline: none;
-  background-color: #d6ad60;
+  background-color: #f5a716;
   border-radius: 0.3rem;
   transition: all 0.3s ease;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);

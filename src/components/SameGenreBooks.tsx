@@ -26,7 +26,6 @@ const SameGenreBooks = ({ thisGenre, thisBook }: Props) => {
   );
   if (sameBook !== undefined) {
     let index = sameGenreBooks.indexOf(sameBook);
-    console.log(index);
     sameGenreBooks.splice(index, 1);
   }
 

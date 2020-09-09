@@ -44,7 +44,7 @@ const FormDeliveryDetails = ({
       thisCheckbox.checked = true;
     }
   };
-  console.log(delivery);
+  // console.log(delivery);
 
   const createCheckboxes = DELIVERYOPTIONS.map((option: any, id: number) => {
     return (

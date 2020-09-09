@@ -29,7 +29,7 @@
   border-radius: 0.3rem;
   border: none;
   outline: none;
-  background-color: #d6ad60;
+  background-color: #f5a716;
   /* font-weight: 500; */
 }
 
@@ -109,7 +109,7 @@ select {
   content: "\25BC";
   color: white;
   position: absolute;
-  background-color: #d6ad60;
+  background-color: #f5a716;
   top: 0;
   right: 0;
   border: 0.5px solid black;
@@ -122,7 +122,7 @@ select {
 
 .select:hover::after {
   background-color: #fff;
-  color: #d6ad60;
+  color: #f5a716;
 }
 
 /*
@@ -160,7 +160,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
-  background: #d6ad60;
+  background: #f5a716;
   cursor: pointer;
   margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */

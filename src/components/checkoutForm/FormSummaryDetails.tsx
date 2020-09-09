@@ -114,35 +114,39 @@ const FormSummaryDetails = ({
     return null;
   }
   return (
-    <div style={{ width: "100%", padding: "0 1rem 0.5rem 1rem" }}>
+    <div style={{ width: "100%", padding: "0 0rem 0rem 0rem" }}>
       <h3 className={styles.yourOrderTitle}>Your order</h3>
-      <h4 className={styles.detailsTitle}>Your details</h4>
-      {userDetailSummary}
-      <h4 className={styles.detailsTitle}>Cart details</h4>
-      <table className={styles.cartSummaryDetails}>
-        <thead>
-          <tr>
-            <th>Item:</th>
-            <th className={styles.cartSummaryName}>Name:</th>
-            <th className={styles.cartSummaryGenre}>Genre:</th>
-            <th className={styles.cartSummaryIsbn}>ISBN</th>
-            <th className={styles.cartSummaryAuthor}>Author</th>
-            <th>Quantity</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>{cartSummary}</tbody>
-      </table>
+      <div className={styles.summaryContent}>
+        <h4 className={styles.detailsTitle}>Your details</h4>
+        {userDetailSummary}
+        <h4 className={styles.detailsTitle}>Cart details</h4>
+        <table className={styles.cartSummaryDetails}>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th className={styles.cartSummaryName}>Name</th>
+              <th className={styles.cartSummaryGenre}>Genre</th>
+              <th className={styles.cartSummaryIsbn}>ISBN</th>
+              <th className={styles.cartSummaryAuthor}>Author</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>{cartSummary}</tbody>
+        </table>
+      </div>
       <p className={styles.clearfix}></p>
-      <h4 className={styles.deliveryDetailsTitle}>Delivery details</h4>
-      <div className={styles.deliveryDetails}>
-        <div>
-          <span>{deliveryRes[0]}</span>
-          <span className={styles.deliveryPrice}>{deliveryRes[1]}</span>
+      <div className={styles.deliveryContent}>
+        <h4 className={styles.deliveryDetailsTitle}>Delivery details</h4>
+        <div className={styles.deliveryDetails}>
+          <div>
+            <span>{deliveryRes[0]}</span>
+            <span className={styles.deliveryPrice}>{deliveryRes[1]}</span>
+          </div>
+          <span className={styles.orderTotal}>
+            Total: {summaryTotal(sum, deliveryRes[1])}
+          </span>
         </div>
-        <span className={styles.orderTotal}>
-          Total: {summaryTotal(sum, deliveryRes[1])}
-        </span>
       </div>
     </div>
   );

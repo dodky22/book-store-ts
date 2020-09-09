@@ -22,6 +22,10 @@ const Cart = (props: Props) => {
 
   const [showCheckout, setShowCheckout] = useState(false);
 
+  const handleShowCheckout = () => {
+    setShowCheckout(!showCheckout);
+  };
+
   if (cart === null || cart.length === 0) {
     return (
       <section className={styles.section}>
@@ -83,7 +87,11 @@ const Cart = (props: Props) => {
 
     return (
       <>
-        <section className={styles.section}>
+        <section
+          className={
+            showCheckout ? styles.hide : `${styles.showcart} ${styles.section}`
+          }
+        >
           <div className={styles.container}>
             <h3>Cart</h3>
             <div className={styles.cart}>
@@ -113,9 +121,7 @@ const Cart = (props: Props) => {
                   </div>
                   <button
                     className={styles.checkoutBtn}
-                    onClick={() => {
-                      setShowCheckout(!showCheckout);
-                    }}
+                    onClick={handleShowCheckout}
                   >
                     Checkout
                   </button>
@@ -125,15 +131,12 @@ const Cart = (props: Props) => {
           </div>
         </section>
         <section className={showCheckout ? styles.show : styles.hide}>
-          <button
-            className={styles.closeBtn}
-            onClick={() => {
-              setShowCheckout(!showCheckout);
-            }}
-          >
-            X
-          </button>
-          <CheckoutForm sum={prices}></CheckoutForm>
+          <div className={styles.checkoutContent}>
+            <CheckoutForm
+              sum={prices}
+              handle={handleShowCheckout}
+            ></CheckoutForm>
+          </div>
         </section>
       </>
     );

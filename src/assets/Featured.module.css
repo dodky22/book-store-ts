@@ -42,11 +42,11 @@
 }
 
 .link {
-  background-color: #d6ad60;
+  background-color: #f5a716;
   width: 10%;
   display: inline-block;
   margin: 0.5rem auto 1rem auto;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 2rem;
   border-radius: 0.8rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -55,6 +55,7 @@
 .link:hover {
   background-color: #d39522;
   color: #fff;
+  transform: scale(1.05);
   transition: 0.5s;
 }
 

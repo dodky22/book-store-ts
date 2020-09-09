@@ -14,7 +14,7 @@ const NormalNav = (props: Props) => {
         <NavLink to="/book-store-ts" exact activeClassName={styles.active}>
           <span role="img" aria-label="book emoji">
             📖
-          </span>{" "}
+          </span>
           Home
         </NavLink>
         <NavLink

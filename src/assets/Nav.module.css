@@ -10,6 +10,10 @@
   border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 }
 
+.navigation a:hover {
+  color: #f5a716;
+}
+
 .container {
   padding: 1rem 0;
   margin: 0 auto;
@@ -42,7 +46,8 @@
 }
 
 .pill {
-  background: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+  background: #f5a716;
+  /* linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff); */
   padding: 0.4rem;
   border-radius: 1rem;
   position: relative;

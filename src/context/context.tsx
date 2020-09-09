@@ -161,10 +161,9 @@ const BookProvider = ({ children }: Props) => {
 
   const addCart = (book: BookModel) => {
     let cartBooks: CartBookModel[] = [...cart];
-    // console.log(cartBooks);
 
     if (!cartBooks.find((b) => b.book === book)) {
-      console.log("!found");
+      // console.log("!found");
       let newBook: CartBookModel = {
         book: book,
         quantity: 1,
@@ -227,10 +226,8 @@ const BookProvider = ({ children }: Props) => {
   const getCartItems = () => {
     let cartItemsStr = localStorage.getItem("cartItems");
     let cartItems = cartItemsStr !== null ? JSON.parse(cartItemsStr) : [];
-    console.log(cartItems);
 
     setCart(cartItems);
-    console.log(cart);
   };
 
   React.useEffect(() => {

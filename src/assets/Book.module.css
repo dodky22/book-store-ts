@@ -46,7 +46,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #d6ad60;
+  background-color: #f5a716;
   color: white;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -62,7 +62,7 @@
   left: 0;
   color: white;
   width: 100%;
-  background-color: #d6ad60;
+  background-color: #f5a716;
 }
 
 .info:hover {
@@ -78,7 +78,7 @@
   top: 0;
   right: 0;
   padding: 0.8rem;
-  background-color: #d6ad60;
+  background-color: #f5a716;
   border: none;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
